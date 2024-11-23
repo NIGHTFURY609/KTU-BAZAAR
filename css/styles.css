@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*resetting all elemnts from default margin and padding*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    color: #555;
+}/*basic rules to body element*/
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-template-rows: 70px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;/*top nav bar*/
+}
+nav .brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d5189;/*customizing brand name*/
+
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    transition: background-color 0.3s, color 0.3s ;
+    color: #b9d917;
+    font-size: 18px;/*customizing links(targetting a tags*/
+
+}
+nav a:hover,
+nav a.active{
+    background: #086ad3;
+    color: white;
+    border-radius: 3px; /*modifying the hover and active elements*/
+    
+}
+header{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #d7a3a3e4;
+}
+header h1{
+    color: white;
+}
+/* Remove or populate the empty rule */
+header.sub-title{
+    margin-top: 20px;
+    line-height: 28px;
+}
+/*main section*/
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+main .section-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1d5189;
+    margin-bottom: 20px;
+}
+main .left{
+    padding-right: 20px;
+    border-right: thin solid #ddd;
+
+}
+main .left a{
+    display: block;
+    padding: 10px 0;
+    color: #363737;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+main .left a:hover{
+    text-decoration: underline;
+}
+main .right{
+    color: #086ad3;
+}
+main .right .product{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    
+}
+main .right .product .product-left img{
+   display: block;
+    height: 150px;
+    margin: 0 auto;
+}
+main .right .title{/*tagrgetting modules on right side*/
+    font-size: 28px;
+    font-weight: bold;
+    color: #1d5189;
+    text-decoration: none;
+    line-height: 26px;
+    
+}
+main .right .title a:hover{
+    text-decoration: underline; /*modifying the hover and active elements*/
+}
+main .right .description{
+   margin-top: 10px;
+   text-decoration: none;
+}
+margin .right .price{
+    font-size: 20px;
+    margin-top: 30px;
+    color: #1d5189;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #e3dadae4;
+    width: 100%;
+    color: white;
+}
+
+
+
+
+
+
+
